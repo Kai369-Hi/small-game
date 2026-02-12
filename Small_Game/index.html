@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>问答小游戏</title>
+</head>
+<body>
+    <div id="start-page">
+        <h1>欢迎来到问答小游戏！</h1>
+        <img id="cover-image" src="picture1.jpg" alt="封面图片">
+        <button id="start-btn">开始游戏</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <div id="game-area">
+            <img id="question-image" src="" alt="问题图片">
+            <p id="question-text"></p>
+            <div id="buttons">
+                <button id="yes-btn">是</button>
+                <button id="no-btn">否</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="omojianajiajiajia.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

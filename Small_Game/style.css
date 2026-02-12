@@ -1,0 +1,163 @@
+/* ===== 全局 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "微软雅黑", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe4ec, #fff0f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== 开始页面 ===== */
+#start-page {
+    background-color: #ffffff;
+    padding: 35px 45px;
+    border-radius: 28px;
+    box-shadow: 0 15px 30px rgba(255, 182, 193, 0.45);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* 左右居中 */
+    justify-content: center;  /* 上下居中 */
+    gap: 20px;
+
+    animation: fadeIn 1s ease;
+}
+
+#start-page h1 {
+    color: #ff69b4;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* 封面图片 */
+#cover-image {
+    width: 220px;
+    border-radius: 22px;
+    box-shadow: 0 8px 18px rgba(255, 182, 193, 0.5);
+}
+
+/* 开始按钮 */
+#start-btn {
+    background-color: #ff8fc7;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #ff63b1;
+    transform: scale(1.08);
+}
+
+/* ===== 游戏页面 ===== */
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-area {
+    background-color: #ffffff;
+    padding: 35px 45px;
+    border-radius: 28px;
+    box-shadow: 0 15px 30px rgba(255, 182, 193, 0.45);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* 所有内容居中 */
+    justify-content: center;
+    gap: 20px;
+
+    max-width: 420px;
+    animation: popIn 0.8s ease;
+}
+
+/* 问题图片 */
+#question-image {
+    width: 220px;
+    border-radius: 22px;
+    box-shadow: 0 8px 18px rgba(255, 182, 193, 0.5);
+}
+
+/* 问题文字 */
+#question-text {
+    font-size: 20px;
+    color: #ff69b4;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* 按钮区域 */
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* 是 / 否 按钮 */
+#yes-btn,
+#no-btn {
+    width: 120px;
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* 是按钮 */
+#yes-btn {
+    background-color: #ff9ad5;
+    color: white;
+}
+
+#yes-btn:hover {
+    background-color: #ff6fb5;
+    transform: scale(1.15);
+}
+
+/* 否按钮 */
+#no-btn {
+    background-color: #ffd6e8;
+    color: #ff4f9a;
+}
+
+#no-btn:hover {
+    background-color: #ffb3d9;
+    transform: scale(1.05);
+}
+
+/* ===== 动画 ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
